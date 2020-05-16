@@ -1,19 +1,38 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import gray from "gray-percentage"
+import oceanBeachTheme from "typography-theme-ocean-beach"
 
-Wordpress2016.overrideThemeStyles = () => {
+oceanBeachTheme.headerFontFamily = ["Work Sans", "sans-serif"]
+oceanBeachTheme.googleFonts.push({
+  name: "Work Sans",
+  styles: ["600"]
+})
+oceanBeachTheme.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }) => {
   return {
     "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+      boxShadow: "none"
     },
+    "a": {
+      color: "#419eda",
+      textShadow: "none",
+      backgroundImage: "none"
+    },
+    blockquote: {
+      ...adjustFontSizeTo("19px"),
+      color: gray(60),
+      fontStyle: "italic",
+      borderLeft: `${rhythm(6 / 26)} solid ${gray(70)}`
+    },
+    "a:hover": {
+      backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #419eda 1px, #419eda 2px, rgba(0, 0, 0, 0) 2px)"
+    }
   }
 }
 
-delete Wordpress2016.googleFonts
+console.log(oceanBeachTheme)
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(oceanBeachTheme)
 
-// Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
   typography.injectStyles()
 }
