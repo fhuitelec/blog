@@ -4,7 +4,7 @@ date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 ---
 
-```jsx{numberLines: true}
+```jsx {numberLines: true}
 class FlavorForm extends React.Component { // highlight-line
   constructor(props) {
     super(props);
