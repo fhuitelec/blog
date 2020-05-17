@@ -29,8 +29,6 @@ oceanBeachTheme.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }) => {
   }
 }
 
-console.log(oceanBeachTheme)
-
 const typography = new Typography(oceanBeachTheme)
 
 if (process.env.NODE_ENV !== `production`) {

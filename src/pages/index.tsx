@@ -1,4 +1,3 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
@@ -37,7 +36,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
+      <Bio withSummary={true} />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
@@ -70,6 +69,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
 export default BlogIndex
 
+// noinspection JSUnusedGlobalSymbols
 export const pageQuery = graphql`
   query {
     site {

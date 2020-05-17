@@ -44,7 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <footer>
-          <Bio />
+          <Bio withSummary={false}/>
         </footer>
       </article>
 
