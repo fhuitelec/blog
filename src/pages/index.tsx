@@ -69,7 +69,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
 export default BlogIndex
 
-// noinspection JSUnusedGlobalSymbols
 export const pageQuery = graphql`
   query {
     site {
