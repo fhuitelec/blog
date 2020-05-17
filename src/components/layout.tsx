@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
+  // @ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
