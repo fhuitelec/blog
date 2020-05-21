@@ -7,13 +7,14 @@ oceanBeachTheme.googleFonts.push({
   name: "Work Sans",
   styles: ["600"]
 })
+
 oceanBeachTheme.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }) => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: "none"
     },
     "a": {
-      color: "#419eda",
+      color: "#247cb7",
       textShadow: "none",
       backgroundImage: "none"
     },
@@ -24,7 +25,7 @@ oceanBeachTheme.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }) => {
       borderLeft: `${rhythm(6 / 26)} solid ${gray(70)}`
     },
     "a:hover": {
-      backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #419eda 1px, #419eda 2px, rgba(0, 0, 0, 0) 2px)"
+      backgroundImage: "linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #247cb7 1px, #419eda 2px, rgba(0, 0, 0, 0) 2px)"
     }
   }
 }
@@ -39,6 +40,6 @@ export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
 export const colors = {
-  main: '#419eda',
+  main: '#247cb7',
   gray: gray
 }
