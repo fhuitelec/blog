@@ -29,12 +29,12 @@ type Data = {
   }
 }
 
-const BlogIndex = ({ data, location }: PageProps<Data>) => {
+const BlogIndex = ({ data }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout bigHeader={true} title={siteTitle}>
       <SEO title="All posts" />
       <Bio withSummary={true} />
       {posts.map(({ node }) => {

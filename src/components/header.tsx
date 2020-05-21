@@ -14,12 +14,17 @@ const Title = ({ title }: {title: string}) => (
   </React.Fragment>
 )
 
-const Header = ({ title }: {title: string}) => {
+type Props = {
+  title: string,
+  big: boolean
+}
+
+const Header = ({ title, big }: Props) => {
   // @ts-ignore
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  if (location.pathname === rootPath) {
+  if (big) {
     header = (
       <h1
         style={{

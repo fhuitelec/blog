@@ -3,7 +3,13 @@ import React from "react"
 import { rhythm } from "../utils/typography"
 import Header from "./header"
 
-const Layout = ({ location, title, children }) => (
+type Props = {
+  title: string,
+  bigHeader: boolean,
+  children: React.ReactNode
+}
+
+const Layout = ({ title, bigHeader, children }: Props) => (
   <div
     style={{
       marginLeft: `auto`,
@@ -12,7 +18,7 @@ const Layout = ({ location, title, children }) => (
       padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
     }}
   >
-    <Header title={title}/>
+    <Header big={bigHeader} title={title}/>
     <main>{children}</main>
   </div>
 )
