@@ -6,10 +6,11 @@ module.exports = {
       summary: `a kind of SRE, and mostly developer, devops & sysadmin.`,
     },
     description: `Blog from an SRE, developer, devops, sysadmin, name it.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://blog.fabien.sh/`,
     social: {
       twitter: `fhuitelec`,
     },
+    icon: `https://blog.fabien.sh/icons/icon-512x512.png`
   },
   plugins: [
     {
@@ -73,6 +74,7 @@ module.exports = {
                 description
                 siteUrl
                 site_url: siteUrl
+                image_url: icon
               }
             }
           }
@@ -110,9 +112,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Your Site's RSS Feed",
-            // optional configuration to specify external rss feed, such as feedburner
-            link: "https://feeds.feedburner.com/gatsby/blog",
+            title: "Fabien Huitelec",
           },
         ],
       }
