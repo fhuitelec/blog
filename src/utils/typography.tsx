@@ -5,7 +5,7 @@ import oceanBeachTheme from "typography-theme-ocean-beach"
 oceanBeachTheme.headerFontFamily = ["Work Sans", "sans-serif"]
 oceanBeachTheme.googleFonts.push({
   name: "Work Sans",
-  styles: ["600"]
+  styles: ["600&display=swap"] // display=swap => Dirty trick, cf. https://bit.ly/3e1mUBm
 })
 
 oceanBeachTheme.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }) => {
