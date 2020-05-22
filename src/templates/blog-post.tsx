@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import typography, { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -18,6 +18,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
+        <style>{ typography.toString() }</style>
         <header>
           <h1
             style={{

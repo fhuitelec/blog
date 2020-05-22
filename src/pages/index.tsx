@@ -4,7 +4,7 @@ import { PageProps, Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import typography, { rhythm } from "../utils/typography"
 
 type Data = {
   site: {
@@ -41,6 +41,7 @@ const BlogIndex = ({ data }: PageProps<Data>) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
+            <style>{ typography.toString() }</style>
             <header>
               <h3
                 style={{
