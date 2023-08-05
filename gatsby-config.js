@@ -9,15 +9,17 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `fabien.sh`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Fabien Huitelec`,
+      summary: `a platform/cloud engineer.`,
+      pronoun: `him`
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Blog from a platform/cloud engineer.`,
+    siteUrl: `https://blog.fabien.sh/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `fhuitelec`,
+      twitter: `fhuitelec`
     },
   },
   plugins: [
