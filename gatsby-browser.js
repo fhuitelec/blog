@@ -1,6 +1,7 @@
 // Custom typefaces
 import "@fontsource-variable/montserrat"
 import "@fontsource/merriweather"
+import "./src/styles/fonts/jetbrains-mono.css"
 
 // Normalize CSS across browsers
 import "./src/styles/gatsby-starter-blog/normalize.css"
@@ -10,3 +11,10 @@ import "./src/styles/gatsby-starter-blog/base.css"
 
 // Libraries
 import "prismjs/themes/prism.css"
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+
+// Customizations
+import "./src/styles/gatsby-remark-code-titles.css"
+import "./src/styles/key.css"
+import "./src/styles/gatsby-code-highlight-fixes.css"
+import "./src/styles/code-highlight-darcula.css"

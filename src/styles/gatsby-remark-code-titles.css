@@ -1,0 +1,16 @@
+.gatsby-remark-code-title {
+    margin-bottom: -0.7rem;
+    padding: 0.7em 1em 1em;
+    font-size: 0.6em;
+    font-family: 'JetBrains Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+        'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+        'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+        monospace;
+
+    background-color: #393b34;
+    color: #959595;
+    z-index: 0;
+
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+}
