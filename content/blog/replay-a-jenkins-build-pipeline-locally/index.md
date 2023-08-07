@@ -12,7 +12,7 @@ When developing a complex build pipeline, we all have our time-consuming routine
 
 ```shell {numberLines: true}
 # Just edited Jenkinsfile dealing with some deploy when merging on master
-git add Jenkinsfile lib/jenkins/Servers.groovy # git add 
+git add Jenkinsfile lib/jenkins/Servers.groovy # git add
 git commit -m "WIP build pipeline" # git commit
 git push origin master --force # previously rebased 50 "WIP build pipeline" in git history
                                # push force on master, yolo
@@ -79,6 +79,7 @@ To be able to replay the build pipeline, you can see in `infrastructure/docker-c
 In the following example, I’ll use a custom library import `Servers.groovy` to see how we replay a handful of scripts.
 
 We are going to edit these files to try the CLI:
+
 - In `bin/Jenkinsfile`, let’s add a dummy `sh(echo Toto)`
 - In `demo/lib/src/demo/Servers.groovy`, let’s replace `String id = UUID.randomUUID().toString()` by `String id = "tmp-${UUID.randomUUID()}"`
 

@@ -10,7 +10,7 @@ import "./src/styles/gatsby-starter-blog/base.css"
 
 // Libraries
 import "prismjs/themes/prism.css"
-import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 
 // Customizations
 import "./src/styles/gatsby-remark-code-titles.css"

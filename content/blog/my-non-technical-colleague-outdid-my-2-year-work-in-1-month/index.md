@@ -17,6 +17,7 @@ A few years back, I was hired to, among other things, implement a bridge between
 The end goal was simple: make life easier for our account managers and industrialize a bit our B2B interactions.
 
 In the last sentence, you will have noticed two things:
+
 - the end goal is quite standard for a business (we have account managers and a B2B side)
 - this CRM thingy is directly used by our own people
 

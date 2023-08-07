@@ -7,8 +7,8 @@ const Layout = ({ location, title, children }) => {
   let header
   const styledTitle = (
     <div>
-      <span className="title-main">{title.split('.')[0]}</span>
-      <span className="title-extension">.{title.split('.')[1]}</span>
+      <span className="title-main">{title.split(".")[0]}</span>
+      <span className="title-extension">.{title.split(".")[1]}</span>
     </div>
   )
 
@@ -20,7 +20,9 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">{styledTitle}</Link>
+      <Link className="header-link-home" to="/">
+        {styledTitle}
+      </Link>
     )
   }
 

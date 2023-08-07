@@ -12,14 +12,14 @@ module.exports = {
     title: `fabien.sh`,
     author: {
       name: `Fabien`,
-      summary: `a platform/cloud engineer.`,
-      pronoun: `him`
+      summary: `a platform/cloud engineer`,
+      pronoun: `him`,
     },
     description: `Blog from a platform/cloud engineer`,
     siteUrl: `https://blog.fabien.sh/`,
     social: {
       linkedin: `fhuitelec`,
-      twitter: `fhuitelec`
+      twitter: `fhuitelec`,
     },
   },
   plugins: [
@@ -55,15 +55,15 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-code-titles',
+            resolve: "gatsby-remark-code-titles",
             options: {
-              className: 'gatsby-remark-code-title',
+              className: "gatsby-remark-code-title",
             },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              inlineCodeMarker: '›',
+              inlineCodeMarker: "›",
             },
           },
         ],

@@ -36,7 +36,7 @@ Note: we could have used patch files but kustomize's ability to [merge and manip
 
 ## The magic ✨
 
-```yaml:title=values.yaml  {numberLines: true}
+```yaml:title=values.yaml {numberLines: true}
 # Cf. https://github.com/helm/charts/blob/master/stable/traefik/values.yaml
 rbac:
   enabled: true
@@ -47,7 +47,7 @@ dashboard:
 serviceType: NodePort
 ```
 
-```shell:title=helm-template-to-native-k8s-resource.sh  {numberLines: true}
+```shell:title=helm-template-to-native-k8s-resource.sh {numberLines: true}
 # Pre-requisite:
 # - You have minikube with kubernetes > 1.14 up & running
 # - You have setup tiller on minikube
@@ -64,6 +64,7 @@ helm template \
     --name traefik-ingress-controller \
     helm/traefik/chart/traefik > traefik-helm-template.yaml
 ```
+
 ```yaml:title=kustomization.yaml {numberLines: true}
 # This is where the magic happens ✨
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -119,7 +120,7 @@ spec:
 # This operation removes the port 8880 (index 1)
 - op: remove
   path: /spec/template/spec/containers/0/ports/1
-  
+
 # Careful: each operation is done sequentially so you have
 #          to take into account the operations before to determine
 #          how to manipulate paths
