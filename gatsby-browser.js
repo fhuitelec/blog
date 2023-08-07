@@ -1,6 +1,4 @@
 // Custom typefaces
-import "@fontsource-variable/montserrat"
-import "@fontsource/merriweather"
 import "./src/styles/fonts/jetbrains-mono.css"
 import "./src/styles/fonts/open-sans.css"
 
