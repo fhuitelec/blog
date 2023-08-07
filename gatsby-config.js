@@ -11,11 +11,11 @@ module.exports = {
   siteMetadata: {
     title: `fabien.sh`,
     author: {
-      name: `Fabien Huitelec`,
+      name: `Fabien`,
       summary: `a platform/cloud engineer.`,
       pronoun: `him`
     },
-    description: `Blog from a platform/cloud engineer.`,
+    description: `Blog from a platform/cloud engineer`,
     siteUrl: `https://blog.fabien.sh/`,
     social: {
       linkedin: `fhuitelec`,

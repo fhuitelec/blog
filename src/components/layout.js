@@ -5,18 +5,22 @@ const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
+  const styledTitle = (
+    <div>
+      <span className="title-main">{title.split('.')[0]}</span>
+      <span className="title-extension">.{title.split('.')[1]}</span>
+    </div>
+  )
 
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <Link to="/">{styledTitle}</Link>
       </h1>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <Link className="header-link-home" to="/">{styledTitle}</Link>
     )
   }
 

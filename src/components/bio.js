@@ -45,11 +45,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          By <strong>{author.name}</strong>, {author?.summary || null}
-          {` `}
-          <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
-            You should follow {author?.pronoun} on LinkedIn
-          </a>
+          Hi! I'm <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}><strong>{author.name}</strong></a>, {author?.summary || null}
         </p>
       )}
     </div>

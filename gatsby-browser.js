@@ -2,6 +2,7 @@
 import "@fontsource-variable/montserrat"
 import "@fontsource/merriweather"
 import "./src/styles/fonts/jetbrains-mono.css"
+import "./src/styles/fonts/open-sans.css"
 
 // Normalize CSS across browsers
 import "./src/styles/gatsby-starter-blog/normalize.css"
