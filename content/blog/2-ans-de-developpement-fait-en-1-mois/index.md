@@ -1,7 +1,7 @@
 ---
 title: 2 ans de développement fait en 1 mois ?!
 date: "2018-08-11T11:23:22.169Z"
-description: "Je vous compte une anecdote à propos d'un collègue non-tech qui a réussi à reproduire 2 ans de mon travail en 1 mois."
+description: "Je vous conte une anecdote à propos d'un collègue non-tech qui a réussi à reproduire 2 ans de mon travail en 1 mois."
 published: true
 tags: ["mvp", "learnings"]
 language: english
