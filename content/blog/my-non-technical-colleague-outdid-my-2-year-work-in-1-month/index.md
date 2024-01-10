@@ -4,6 +4,7 @@ date: "2018-08-11T11:23:22.169Z"
 description: "Through this story, I want to highlight a fact I learnt the hard way: we, developers, need to seek for simplicity, at its essence."
 published: true
 tags: ["mvp", "learnings"]
+language: english
 ---
 
 Through this story, I want to highlight a fact I learnt the hard way: we, developers, need to seek for simplicity, at its essence.
