@@ -1,7 +1,7 @@
 ---
-title: Build your PHP/Nginx docker artifact
+title: Ne créer qu'une image docker pour PHP-FPM & Nginx
 date: "2018-07-16T15:34:04.169Z"
-description: "And not one more."
+description: "Et pas une de plus."
 published: true
 tags: ["container", "best practice"]
 language: english

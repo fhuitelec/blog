@@ -1,7 +1,7 @@
 ---
-title: My non-technical colleague outdid my 2-year work in 1 month
+title: 2 ans de développement fait en 1 mois ?!
 date: "2018-08-11T11:23:22.169Z"
-description: "Through this story, I want to highlight a fact I learnt the hard way: we, developers, need to seek for simplicity, at its essence."
+description: "Je vous compte une anecdote à propos d'un collègue non-tech qui a réussi à reproduire 2 ans de mon travail en 1 mois."
 published: true
 tags: ["mvp", "learnings"]
 language: english
@@ -30,7 +30,7 @@ As a SaaS tool, the CRM we chose is generic but open for extension. You can crea
 
 However, entering data is one side of the story, using and projecting the data is another and a trickier one if you ask me.
 
-This is where we fell short:
+This is where we fell short.
 
 As a general rule of thumb: you cannot use the data you generate inside a generic CRM unless you import all the relevant data from all your other data sources within it (and it implies a lot of complexity), so all the views I created for our users missed a lot of business context and were, in many cases, pointless.
 
