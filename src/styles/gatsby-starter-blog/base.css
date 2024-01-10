@@ -311,6 +311,11 @@ a:focus {
   color: var(--color-text-extra-light);
 }
 
+.post-list-item header span.language, .blog-post header p span.language {
+  padding-right: 10px;
+  color: var(--color-text-extra-light);
+}
+
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }

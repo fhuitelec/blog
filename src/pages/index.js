@@ -43,6 +43,7 @@ const BlogIndex = ({ data, location }) => {
                     </Link>
                   </h2>
                   <small>
+                    <span className='language'>{post.frontmatter.language === 'english' ? '🇬🇧' : '🇫🇷'}</span>
                     <span>{post.frontmatter.date}</span>
                     {post.frontmatter.tags?.map(tag => (
                       <span className='tag'>#{tag}</span>
@@ -102,6 +103,7 @@ export const pageQuery = graphql`
           title
           description
           tags
+          language
         }
       }
     }

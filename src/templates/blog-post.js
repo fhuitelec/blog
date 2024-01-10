@@ -21,6 +21,7 @@ const BlogPostTemplate = ({
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>
+            <span className='language'>{post.frontmatter.language === 'english' ? '🇬🇧' : '🇫🇷'}</span>
             <span>{post.frontmatter.date}</span>
             {post.frontmatter.tags?.map(tag => (
               <span className='tag'>#{tag}</span>
@@ -101,6 +102,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        language
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
