@@ -17,7 +17,6 @@ const Bio = () => {
           author {
             name
             summary
-            pronoun
           }
           social {
             linkedin
