@@ -70,7 +70,7 @@ export default BlogIndex
  */
 export const Head = () => (
   <Seo title="blog">
-    {process.env.NODE_ENV !== 'production' &&
+    {process.env.NODE_ENV === 'production' &&
       <script defer data-domain="blog.fabien.sh" src="https://plausible.io/js/script.js"></script>
     }
   </Seo>
