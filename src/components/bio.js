@@ -17,9 +17,9 @@ const Bio = () => {
           author {
             name
             summary
-          }
-          social {
-            linkedin
+            website {
+              url
+            }
           }
         }
       }
@@ -45,10 +45,7 @@ const Bio = () => {
       {author?.name && (
         <p>
           Salut ! Je suis{" "}
-          <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
-            <strong>{author.name}</strong>
-          </a>
-          , {author?.summary || null}.
+          <a href={author.website.url}><strong>{author.name}</strong></a>, {author?.summary || null}.
         </p>
       )}
     </div>

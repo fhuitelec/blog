@@ -13,6 +13,9 @@ module.exports = {
     author: {
       name: `Fabien`,
       summary: `un platform engineer`,
+      website: {
+        url: `https://fabien.sh`
+      }
     },
     description: `Blog d'un platform engineer`,
     siteUrl: `https://blog.fabien.sh/`,
