@@ -66,7 +66,11 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
-    />
+    >
+    {process.env.NODE_ENV !== 'production' &&
+      <script defer data-domain="blog.fabien.sh" src="https://plausible.io/js/script.js"></script>
+    }
+  </Seo>
   )
 }
 
