@@ -46,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
                     <span className='language'>{post.frontmatter.language === 'english' ? '🇬🇧' : '🇫🇷'}</span>
                     <span>{post.frontmatter.date}</span>
                     {post.frontmatter.tags?.map(tag => (
-                      <span className='tag'>#{tag}</span>
+                      <span className='tag' key={tag}>#{tag}</span>
                     ))}
                   </small>
                 </header>
