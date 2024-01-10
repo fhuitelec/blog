@@ -12,10 +12,9 @@ module.exports = {
     title: `fabien.sh`,
     author: {
       name: `Fabien`,
-      summary: `a platform/cloud engineer`,
-      pronoun: `him`,
+      summary: `un platform engineer`,
     },
-    description: `Blog from a platform/cloud engineer`,
+    description: `Blog d'un platform engineer`,
     siteUrl: `https://blog.fabien.sh/`,
     social: {
       linkedin: `fhuitelec`,
@@ -115,7 +114,7 @@ module.exports = {
               }
             }`,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Blog fabien.sh feed RSS",
           },
         ],
       },
@@ -123,8 +122,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `Gatsby`,
+        name: `Blog d'un platform engineer`,
+        short_name: `fabien.sh`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
