@@ -3,6 +3,7 @@ title: Build your PHP/Nginx docker artifact
 date: "2018-07-16T15:34:04.169Z"
 description: "And not one more."
 published: true
+tags: ["container", "best practice"]
 ---
 
 I have always been bothered by a simple issue when building docker image artifacts for my PHP/Nginx applications. The issue of building **two docker image artifacts** instead of **just one** with my PHP source code.
