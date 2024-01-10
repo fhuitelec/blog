@@ -4,6 +4,7 @@ date: "2017-01-24T12:10:54.169Z"
 description: "Let me introduce you, in a nutshell, a way to iterate on a Jenkins pipeline on your local machine."
 published: true
 tags: ["jenkins"]
+language: english
 ---
 
 Let me introduce you, in a nutshell, a way to iterate on a Jenkins pipeline on your local machine.

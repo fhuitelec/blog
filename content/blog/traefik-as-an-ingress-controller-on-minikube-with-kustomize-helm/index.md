@@ -4,6 +4,7 @@ date: "2019-07-17T07:31:00.169Z"
 description: "I wanted to mess around with skaffold and do it with a clean minikube setup. And by clean I mean one where I can access my services locally via a nice hostname like myservice.dev. I am quite…"
 published: true
 tags: ["kubernetes"]
+language: english
 ---
 
 I wanted to mess around with [skaffold](https://skaffold.dev/) and do it with a clean minikube setup. And by clean I mean one where I can access my services locally via a nice hostname like myservice.dev.
