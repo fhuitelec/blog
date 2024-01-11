@@ -12,12 +12,12 @@ module.exports = {
     title: `fabien.sh`,
     author: {
       name: `Fabien`,
-      summary: `un platform engineer`,
+      summary: `un cloud engineer`,
       website: {
         url: `https://fabien.sh`
       }
     },
-    description: `Blog d'un platform engineer`,
+    description: `Blog d'un cloud engineer`,
     siteUrl: `https://blog.fabien.sh/`,
     social: {
       linkedin: `fhuitelec`,
@@ -125,7 +125,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Blog d'un platform engineer`,
+        name: `Blog d'un cloud engineer`,
         short_name: `fabien.sh`,
         start_url: `/`,
         background_color: `#ffffff`,
