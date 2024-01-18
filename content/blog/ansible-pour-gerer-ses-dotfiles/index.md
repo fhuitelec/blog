@@ -3,7 +3,7 @@ title: Ansible pour gérer ses dotfiles
 date: "2024-01-11T09:57:40.352Z"
 description: "J'ai toujours été contre l’utilisation d’Ansible pour déclarer mes dotfiles, je t'explique pourquoi j’ai changé d’avis."
 published: true
-tags: ["ansible", "dotfiles", "productivity"]
+tags: ["ansible", "shell", "productivity"]
 language: french
 ---
 
