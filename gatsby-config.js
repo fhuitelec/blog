@@ -18,7 +18,7 @@ module.exports = {
       }
     },
     description: `Blog d'un cloud engineer`,
-    siteUrl: `https://blog.fabien.sh/`,
+    siteUrl: process.env.NODE_ENV === 'production' ? 'https://blog.fabien.sh/' : 'http://localhost:8000',
     social: {
       linkedin: `fhuitelec`,
       twitter: `fhuitelec`,

@@ -5,6 +5,7 @@ description: "Ici, on parle d'un prompt facile à configurer, élégant et perso
 published: true
 tags: ["shell", "productivity"]
 language: french
+socialStaticImageName: pure.png
 ---
 
 Je mentionnais récemment [le *plugin manager* zinit](../un-shell-zsh-performant-beau-et-pratique-avec-zinit/) mais il existe un élément très important dans l’expérience qu’on a de son shell, j’ai nommé : **le prompt** !
