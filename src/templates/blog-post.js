@@ -72,6 +72,8 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
+      slug={post.fields.slug}
+      socialStaticImageName={post.frontmatter.socialStaticImageName}
     >
     {process.env.NODE_ENV !== 'production' &&
       <script defer data-domain="blog.fabien.sh" src="https://plausible.io/js/script.js"></script>
@@ -97,12 +99,16 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "YYYY, DD MMMM", locale: "fr")
         description
         tags
         language
+        socialStaticImageName
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
