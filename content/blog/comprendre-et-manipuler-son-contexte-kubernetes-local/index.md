@@ -49,7 +49,7 @@ Ici, je parle exprès d’*identité* et pas d’*utilisateur* : lorsqu’on uti
 
 Un compte de service ou *service account* est un utilisateur “machine” : c’est, par exemple, votre outil d’intégration continue (GitHub Actions, Drone CI, GitLab CI, etc.) qui va revêtir l'identité d'un compte de service pour y déployer une application.
 
-Généralement, sauf utilisation avancée, vous allez principalement interagir avec votre client Kubernetes via un utilisateur simple ou un utilisateur “d’annuaire”.
+Généralement, sauf utilisation avancée, tu vas principalement interagir avec ton client Kubernetes via un utilisateur simple ou un utilisateur “d’annuaire”.
 
 ### Les clusters
 
