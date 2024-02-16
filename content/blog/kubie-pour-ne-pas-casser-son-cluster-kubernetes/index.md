@@ -16,11 +16,11 @@ Un peu plus bas, je te conte une anecdote relativement effrayante pour un *cloud
 
 ## Une anecdote glaçante
 
-Il y a quelques années, j’étais en train d’itérer sur la création d’un cluster Kubernetes local. J’en étais à une étape de *discovery* donc rien n’était industrialisé : pas d’infrastructure-as-code, j’utilisais principalement `kubectl` et quelques script shell semi-automatisé.
+Il y a quelques années, j’étais en train d’itérer sur la création d’un cluster Kubernetes local. J’en étais à une étape de *discovery* donc rien n’était industrialisé : pas d’infrastructure-as-code, j’utilisais principalement `kubectl` et quelques scripts shell semi-automatisés.
 
 À cette époque, j’étais aussi en charge de la bonne santé de l’infrastructure et je gérais des demandes de support de diverses équipes. Je changeais donc de contexte Kubernetes local régulièrement.
 
-Je ne sais plus si c’était suite à un incident de production sur lequel j'étais intervenu ou à une demande de support mais mon contexte Kubernetes local pointait sur un cluster de production. Évidemment, j’ai repris mon itération sur la création d’un cluster Kubernetes local sans faire attention à ce détail : j’ai modifié un script shell que j’ai ensuite exécuté **sur un cluster de production**.
+Je ne sais plus si c’était suite à une demande de support ou à un incident de production sur lequel j'étais intervenu mais mon contexte Kubernetes local pointait sur un cluster de production. Évidemment, j’ai repris mon itération sur la création d’un cluster Kubernetes local sans faire attention à ce détail : j’ai modifié un script shell que j’ai ensuite exécuté **sur un cluster de production**.
 
 Oups.
 
@@ -68,7 +68,7 @@ J’aurais pu utiliser de l’infra-as-code. Mais, encore aujourd’hui, je ne l
 
 Dans un contexte de contribution classique, personne, pas même un profil de type “ops” ne devrait avoir le droit d’effectuer d’action modificative ou destructrice sur un cluster Kubernetes sans infrastructure-as-code ou uniquement via une élévation de privilège ponctuelle.
 
-Grâce aux *[Role-based access control](https://kubernetes.io/fr/docs/reference/access-authn-authz/rbac/)* (RBAC), un cluster ne devrait donner que des permissions restreintes sur une majorité d’objet Kubernetes.
+Grâce aux *[Role-based access control](https://kubernetes.io/fr/docs/reference/access-authn-authz/rbac/)* (RBAC), un cluster ne devrait donner que des permissions restreintes sur une majorité d’objets Kubernetes.
 
 Toute modification sur un cluster de production (ou faisant partie de la chaîne de déploiement pour aller en production) devrait être faite via de l’infrastructure-as-code qui ne serait pas exécutés, dans l’idéal, depuis un poste de développement.
 
@@ -96,9 +96,9 @@ Cela veut dire que tu dois choisir ton contexte avant de pouvoir discuter avec l
 
 ## Configurons kubie
 
-- Installe [kubie](https://github.com/sbstp/kubie?tab=readme-ov-file#installation)
-- On crée 2 plugins `kubectl` :
-    - Dans `/usr/local/bin/kubectl-tx` ajoute :
+- installe [kubie](https://github.com/sbstp/kubie?tab=readme-ov-file#installation)
+- crée 2 plugins `kubectl` :
+    - dans `/usr/local/bin/kubectl-tx` ajoute :
         
         ```bash
         #!/usr/bin/env sh
@@ -106,7 +106,7 @@ Cela veut dire que tu dois choisir ton contexte avant de pouvoir discuter avec l
         kubie ctx $@
         ```
         
-    - Dans `/usr/local/bin/kubectl-ns` ajoute :
+    - dans `/usr/local/bin/kubectl-ns` ajoute :
         
         ```bash
         #!/usr/bin/env sh
@@ -120,21 +120,21 @@ Pour finir, on va supprimer le contexte par défaut lorsque tu ouvres une nouvel
 
 Tu as 2 choix :
 
-- tu ajoutes ceci dans ton `~/.*shrc` : 
+- ajoute ceci dans ton `~/.*shrc` : 
     
     ```bash
     export KUBECONFIG=/dev/null
     ```
     
-    **Avantage** : rien ne peut modifier ce comportement
+    **avantage** : rien ne peut modifier ce comportement
     
-    **Inconvénient** : chaque fois qu’un outil aura besoin d’accéder à ta kube config, il râlera et tu devras exécuter manuellement `unset KUBECONFIG`
+    **inconvénient** : chaque fois qu’un outil aura besoin d’accéder à ta kube config, il râlera et tu devras exécuter manuellement `unset KUBECONFIG`
 
-- tu supprime la ligne `current-context` dans ta *kube config*
+- **ou** supprime le couple clé/valeur `current-context` dans ta *kube config*
     
-    **Avantage** : si un outil a besoin de ta *kube config*, il peut y accéder sans souci
+    **avantage** : si un outil a besoin de ta *kube config*, il peut y accéder sans souci
     
-    **Inconvénient** : certains outils qui modifie la kube config pour y ajouter un cluster (minikube, gcloud, etc.) vont généralement redéfinir `current-context`, tu devras le retirer systématiquement en prenant le risque d’oublier
+    **inconvénient** : certains outils qui modifie la kube config pour y ajouter un cluster (minikube, gcloud, etc.) vont généralement redéfinir `current-context`, tu devras le retirer systématiquement en prenant le risque d’oublier
 
 Personnellement, j’utilise la solution `KUBECONFIG=/dev/null`.
 
@@ -144,6 +144,6 @@ Peu importe que ton environnement Kubernetes soit sain et sécurisé ou non, je 
 
 Et kubie est justement un outil qui te le permets.
 
-Et comme tu peux le voir, ce setup kubie est peu intrusif et offre le même workflow que [précédemment](https://blog.fabien.sh/comprendre-et-manipuler-son-contexte-kubernetes-local/) à l’exception près qu’on doit choisir son contexte Kubernetes à chaque session de terminal.
+Et comme tu peux le voir, ce setup kubie est peu intrusif et offre le même workflow que [précédemment](https://blog.fabien.sh/comprendre-et-manipuler-son-contexte-kubernetes-local/).
 
 À toi de jouer !
