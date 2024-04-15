@@ -8,7 +8,7 @@ language: french
 socialStaticImageName: engineer-writing-code.png
 ---
 
-Imaginez qu’après 10 ans d’expérience dont 7 ans en cloud engineering, je vous dises que j’ai une expérience que j’ai une expérience limitée avec Terraform ?
+Imaginez qu’après 10 ans d’expérience dont 7 ans en cloud engineering, je vous dises que j’ai une expérience limitée avec Terraform ?
 
 <a name="one-top"></a>
 
