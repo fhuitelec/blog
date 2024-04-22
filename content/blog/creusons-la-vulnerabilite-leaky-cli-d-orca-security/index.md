@@ -84,7 +84,7 @@ Il y a effectivement de quoi s'alarmer chez AWS qui devrait prendre ce problème
 
 Cependant, il y a peu de choses à reprocher à GCP : `gcloud function deploy --set-secrets` gère ça nativement et est bien documenté.
 
-Mettre le comportement des CLIs d'Azure avec la [CVE-2023-36052](https://nvd.nist.gov/vuln/detail/CVE-2023-36052) et celui d'AWS et GCP est une erreur. J'ai la forte impression qu'Orca Security a voulu créer le buzz avec ce "LeakyCLI" en regroupant les 3 plus grands cloud public.
+Mettre le comportement de la CLI d'Azure avec la [CVE-2023-36052](https://nvd.nist.gov/vuln/detail/CVE-2023-36052) et celui des CLIs d'AWS et GCP est une erreur. J'ai la forte impression qu'Orca Security a voulu créer le buzz avec ce "LeakyCLI" en regroupant les 3 plus grands cloud public.
 
 Pour finir, cette démarche dont je te fais part à travers cet article, je ne l'ai retrouvée nul part chez les personnes qui ont relayé l'information : relayer une information parce qu'elle provient d'une publication d'Orca Security sans s'interroger, c'est tomber dans un biais d'autorité et dans ces métiers qu'on exerce, à mon humble avis, ce n'est pas acceptable.
 
