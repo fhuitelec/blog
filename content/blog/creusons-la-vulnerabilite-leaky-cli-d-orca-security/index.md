@@ -20,6 +20,8 @@ Tout va finalement se reposer sur cette CVE : le comportement des CLIs de GCP et
 
 Dans cet article, je vais tenter de t'expliquer pourquoi cette comparaison entre les CLIs d'Azure, GCP & AWS est maladroite et d'autant plus malvenue qu'elle provient d'une société dont c'est le métier.
 
+> ⚠️ **Disclaimer :** je ne maitrise que la CLI de GCP, si par ailleurs mon analyse et interprétation du fonctionnement des CLIs d'Azure ou AWS était mauvaise, fais-le moi savoir sur [hey@fabien.sh](mailto:hey@fabien.sh).
+
 ## 1. Le cas Microsoft Azure
 
 Bien que Microsoft ait été plutôt exemplaire, on manque de détail concret sur l'origine du problème dans son [article explicatif](https://msrc.microsoft.com/blog/2023/11/microsoft-guidance-regarding-credentials-leaked-to-github-actions-logs-through-azure-cli/) : c'est dans la [PR du correctif](https://github.com/Azure/azure-cli/pull/27565) et [dans la documentation des app settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common?tabs=portal) que je vais tenter de comprendre l'origine du problème.
