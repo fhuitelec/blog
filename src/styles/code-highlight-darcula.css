@@ -82,6 +82,10 @@ pre[class*="language-"] {
     color: #a9b7c6;
 }
 
+.token.operator {
+    background: none;
+}
+
 .token.tag,
 .token.tag .punctuation,
 .token.doctype,
