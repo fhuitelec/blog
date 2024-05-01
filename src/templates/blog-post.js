@@ -104,7 +104,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        date(formatString: "YYYY, DD MMMM", locale: "fr")
+        date(formatString: "Do MMMM YYYY", locale: "fr")
         description
         tags
         language
