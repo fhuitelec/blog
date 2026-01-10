@@ -74,11 +74,7 @@ export const Head = ({ data: { markdownRemark: post } }) => {
       description={post.frontmatter.description || post.excerpt}
       slug={post.fields.slug}
       socialStaticImageName={post.frontmatter.socialStaticImageName}
-    >
-    {process.env.NODE_ENV !== 'production' &&
-      <script defer data-domain="blog.fabien.sh" src="https://plausible.io/js/script.js"></script>
-    }
-  </Seo>
+    ></Seo>
   )
 }
 
